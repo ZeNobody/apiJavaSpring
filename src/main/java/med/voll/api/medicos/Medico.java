@@ -1,11 +1,13 @@
 package med.voll.api.medicos;
 
+import med.voll.api.endereco.Endereco;
+
 import jakarta.persistence.*;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.endereco.Endereco;
-import org.springframework.http.ResponseEntity;
+
 
 @Table(name="medicos")
 @Entity(name="Medico")

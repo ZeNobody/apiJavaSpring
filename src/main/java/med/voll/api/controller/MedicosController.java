@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
-import java.util.List;
-
-
 @RequestMapping("medicos")
 @RestController
 public class MedicosController {
