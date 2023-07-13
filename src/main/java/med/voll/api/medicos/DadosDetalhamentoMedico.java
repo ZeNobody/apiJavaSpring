@@ -1,0 +1,17 @@
+package med.voll.api.medicos;
+
+import med.voll.api.endereco.Endereco;
+
+public record DadosDetalhamentoMedico(Long id, Boolean ativo, String nome, String email, String crm, Especialidade especialidade, Endereco endereco) {
+    public DadosDetalhamentoMedico(Medico medico) {
+        this(
+                medico.getId(),
+                medico.getAtivo(),
+                medico.getNome(),
+                medico.getEmail(),
+                medico.getCrm(),
+                medico.getEspecialidade(),
+                medico.getEndereco()
+                );
+    }
+}
