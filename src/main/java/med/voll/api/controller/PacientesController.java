@@ -1,7 +1,6 @@
 package med.voll.api.controller;
 
-import med.voll.api.medicos.DadosDetalhamentoMedico;
-import med.voll.api.paciente.*;
+import med.voll.api.domain.paciente.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import org.springframework.web.util.UriBuilder;
 import org.springframework.web.util.UriComponentsBuilder;
 
 @RequestMapping("pacientes")

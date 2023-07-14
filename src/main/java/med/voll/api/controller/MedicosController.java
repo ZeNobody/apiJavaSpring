@@ -1,6 +1,6 @@
 package med.voll.api.controller;
 
-import med.voll.api.medicos.*;
+import med.voll.api.domain.medicos.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
