@@ -49,7 +49,7 @@ public class MedicosController {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity excluir (@PathVariable Long id) {
-        // repository.getReferenceById(id);     Deleta todos os dados do banco
+        // repository.getReferenceById(id);
         var medico = repository.getReferenceById(id);
         medico.excluir();
 
